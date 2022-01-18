@@ -3,7 +3,7 @@ class AuthorPostsSerializer < ActiveModel::Serializer
   has_many :tags
 
   def short_content
-      "#{object.content[0..39]}..."
+      "#{self.object.content[0..39]}..."
   end
 
 end
